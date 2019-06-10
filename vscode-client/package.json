@@ -1,0 +1,88 @@
+{
+    "name": "st",
+    "displayName": "IEC 61131-3 Structured Text Language",
+    "description": "",
+    "version": "0.0.1",
+    "publisher": "pmas",
+    "license": "MIT",
+    "engines": {
+        "vscode": "^1.33.x"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/you/your-project.git"
+      },
+    "categories": [
+        "Programming Languages"
+    ],
+    "activationEvents": [
+        "onLanguage:st"
+    ],
+    "main": "./out/src/extension",
+    "contributes": {
+        "languages": [
+            {
+                "id": "st",
+                "aliases": [
+                    "IEC 61131-3 Structured Text"
+                ],
+                "extensions": [
+                    ".st"
+                ]
+            }
+        ],
+        "themes": [
+            {
+                "label": "stTheme",
+                "uiTheme": "vs-dark",
+                "path": "./themes/stTheme.json"
+            }
+        ],
+        "grammars": [
+            {
+              "language": "st",
+              "scopeName": "source.st",
+              "path": "./syntaxes/st.tmGrammar.json"
+            }
+          ],
+        "configuration": {
+            "type": "object",
+            "title": "Example configuration",
+            "properties": {
+                "stLanguageServer.maxNumberOfProblems": {
+                    "type": "number",
+                    "default": 100,
+                    "description": "Controls the maximum number of problems produced by the server."
+                },
+                "stLanguageServer.trace.server": {
+                    "scope": "window",
+                    "type": "string",
+                    "enum": [
+                        "off",
+                        "messages",
+                        "verbose"
+                    ],
+                    "default": "off",
+                    "description": "Traces the communication between VSCode and the demoLanguageServer service."
+                }
+            }
+        }
+    },
+    "extensionDependencies": [],
+    "scripts": {
+        "vscode:prepublish": "tsc -p ./",
+        "compile": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "@types/node": "^12.0.2",
+        "typescript": "^3.4.5",
+        "vscode": "^1.1.33"
+    },
+    "dependencies": {
+        "semver": "^5.5.0",
+        "vscode-languageserver-protocol": "3.15.0-next.5",
+        "vscode-languageclient": "^5.2.1"
+    }
+}
