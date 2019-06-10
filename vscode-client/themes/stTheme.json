@@ -1,0 +1,30 @@
+{
+    "name": "stTheme",
+    "type": "dark",
+    "colors": {
+    },
+    "tokenColors": [
+        {
+            "name": "Comments",
+            "scope": [
+                "comment",
+                "punctuation.definition.comment"
+            ],
+            "settings": {
+                "foreground": "#81C784",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Keywords",
+            "scope": [
+                "keyword",
+                "punctuation.definition.comment"
+            ],
+            "settings": {
+                "foreground": "#22C784",
+                "fontStyle": "italic"
+            }
+        }
+    ]
+}

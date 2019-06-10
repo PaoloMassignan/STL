@@ -1,0 +1,10 @@
+{
+    "scopeName": "source.st",
+    "patterns": [{ "include": "#keywords" }],
+    "repository": {
+      "keywords": {
+        "match": "VAR(_INPUT|_OUTPUT)?|END_VAR|PROGRAM|END_PROGRAM|IF|THEN|END_IF|ELSE(IF)?|FOR|CASE|END_CASE|OF|FUNCTION(_BLOCK?)|END_FUNCTION(_BLOCK)?|WHILE|DO|REPEAT|UNTIL|BREAK",
+        "name": "keyword"
+      }
+    }
+  }

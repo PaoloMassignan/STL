@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.1;net45</TargetFrameworks>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageId>CXuesong.LanguageServer.VsCode</PackageId>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>CXuesong</Authors>
+    <Version>0.2</Version>
+    <Company />
+    <Description>A .NET Language Server infrastructure library for VSCode.</Description>
+    <Copyright>Copyright 2017 CXuesong</Copyright>
+    <PackageTags>vscode language-server language-server-protocol</PackageTags>
+    <NeutralLanguage>en-us</NeutralLanguage>
+    <PackageProjectUrl>https://github.com/CXuesong/LanguageServer.NET</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/CXuesong/LanguageServer.NET</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReleaseNotes>See https://github.com/CXuesong/LanguageServer.NET/releases .</PackageReleaseNotes>
+    <AssemblyVersion>0.2.0.0</AssemblyVersion>
+    <FileVersion>0.2.0.0</FileVersion>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Server\_private\**" />
+    <EmbeddedResource Remove="Server\_private\**" />
+    <None Remove="Server\_private\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CXuesong.JsonRpc.DynamicProxy" Version="0.4.0" />
+    <PackageReference Include="CXuesong.JsonRpc.Standard" Version="0.4.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.2" />
+  </ItemGroup>
+
+</Project>
