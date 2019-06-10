@@ -10,7 +10,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/you/your-project.git"
+        "url": "git+https://github.com/PaoloMassignan/STL.git"
       },
     "categories": [
         "Programming Languages"
