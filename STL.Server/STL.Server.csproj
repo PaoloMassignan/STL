@@ -25,10 +25,6 @@
       <ProjectReference Include="..\LanguageServer.VsCode\LanguageServer.VsCode.csproj" />
       <ProjectReference Include="..\STL\STL.csproj" />
     </ItemGroup>
-  
-    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-      <Exec Command="xcopy /y &quot;$(OutDir)*.dll&quot; &quot;$(ProjectDir)..\vscode-client\server&quot;&#xD;&#xA;xcopy /y &quot;$(OutDir)*.json&quot; &quot;$(ProjectDir)..\vscode-client\server&quot;" />
-    </Target>
 
 
 </Project>
