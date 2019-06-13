@@ -3,7 +3,7 @@
     "displayName": "IEC 61131-3 Structured Text Language",
     "description": "",
     "version": "0.0.1",
-    "publisher": "pmas",
+    "publisher": "PaoloMassignan",
     "license": "MIT",
     "engines": {
         "vscode": "^1.33.x"
