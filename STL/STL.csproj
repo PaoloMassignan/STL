@@ -2,10 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RuntimeFrameworkVersion>2.1.5</RuntimeFrameworkVersion>
   </PropertyGroup>
-  <PropertyGroup>
-    <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
-  </PropertyGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Antlr4.CodeGenerator" Version="4.6.6">

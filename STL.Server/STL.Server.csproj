@@ -1,11 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-     <OutputType>Exe</OutputType>
+    <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RuntimeFrameworkVersion>2.1.5</RuntimeFrameworkVersion>
   </PropertyGroup>
-  
-<ItemGroup>
+
+
+  <ItemGroup>
     <Compile Remove="_private\**" />
     <EmbeddedResource Remove="_private\**" />
     <None Remove="_private\**" />
